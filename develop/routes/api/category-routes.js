@@ -19,10 +19,10 @@ router.get('/',async (req, res) => {
 
 router.get('/:id',async (req, res) => {
   // find one category by its `id` value
-  // be sure to include its associated Products
   try{
     Category.findOne({
       where:{id:req.params.id},
+      // be sure to include its associated Products
       include:[Product]
     }).then((data)=> res.json(data))
 
@@ -59,7 +59,7 @@ router.delete('/:id',async (req, res) => {
   try{
     Category.destroy({
       where:{id:req.params.id}
-    }).then((data)=> res.json(data))
+    }).then((data)=> res.json(data))  
   }catch(err){
     console.error(err)
     res.status(500).json(err)
