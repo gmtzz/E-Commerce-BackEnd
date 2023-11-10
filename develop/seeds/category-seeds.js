@@ -1,5 +1,6 @@
+//import models
 const { Category } = require('../models');
-
+//seeding for category
 const categoryData = [
   {
     category_name: 'Shirts',

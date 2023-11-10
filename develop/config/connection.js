@@ -1,7 +1,8 @@
 require('dotenv').config();
 console.log(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PW)
+//import sequelize libraruy
 const Sequelize = require('sequelize');
-
+//Sequelize instance
 const sequelize = process.env.JAWSDB_URL
   ? new Sequelize(process.env.JAWSDB_URL)
   : new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PW, {
@@ -11,5 +12,5 @@ const sequelize = process.env.JAWSDB_URL
         decimalNumbers: true,
       },
     });
-
+// Export Sequelize instance
 module.exports = sequelize;
