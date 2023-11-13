@@ -29,7 +29,7 @@ Follow these to install and set up the app on your local machine.
 4. run the command npm start in your terminal
 
 ## Demo Recording
-* https://drive.google.com/file/d/1y4rih1XvSe6j9qklejSbM9kqQQqfOW0V/view 
+* https://drive.google.com/file/d/1SlLIiKuj05iasmJARrF4OXIbMsM2YdLr/view 
 ## Screenshots
  * NA
 ## Technologies-Used
